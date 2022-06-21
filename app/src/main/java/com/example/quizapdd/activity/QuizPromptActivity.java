@@ -62,8 +62,6 @@ public class QuizPromptActivity extends BaseActivity {
         initToolbar(true);
         setToolbarTitle(getString(R.string.quiz_prompt));
         enableUpButton();
-
-
     }
 
 

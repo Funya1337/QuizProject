@@ -105,6 +105,10 @@ public class MainActivity extends BaseActivity {
                 .addDrawerItems(
                         new PrimaryDrawerItem().withName("Об аккаунте").withIcon(R.drawable.ic_dev).withIdentifier(10).withSelectable(false),
 
+                        new DividerDrawerItem(),
+                        new SecondaryDrawerItem().withName("Видеоуроки").withIcon(R.drawable.ic_baseline_slow_motion_video_24).withIdentifier(11).withSelectable(false),
+                        new DividerDrawerItem(),
+
                         new SecondaryDrawerItem().withName("YouTube").withIcon(R.drawable.ic_youtube).withIdentifier(20).withSelectable(false),
                         new SecondaryDrawerItem().withName("Facebook").withIcon(R.drawable.ic_facebook).withIdentifier(21).withSelectable(false),
                         new SecondaryDrawerItem().withName("Twitter").withIcon(R.drawable.ic_twitter).withIdentifier(22).withSelectable(false),
@@ -129,7 +133,8 @@ public class MainActivity extends BaseActivity {
                             Intent intent = null;
                             if (drawerItem.getIdentifier() == 10) {
                                 ActivityUtilities.getInstance().invokeNewActivity(activity, AboutDevActivity.class, false);
-
+                            } else if (drawerItem.getIdentifier() == 11) {
+                                ActivityUtilities.getInstance().invokeCustomUrlActivity(activity, VideoLessonsActivity.class, "", "" ,false);
                             } else if (drawerItem.getIdentifier() == 20) {
                                 AppUtilities.youtubeLink(activity);
                             } else if (drawerItem.getIdentifier() == 21) {

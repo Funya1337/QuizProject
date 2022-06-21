@@ -51,6 +51,7 @@ public class QuizActivity extends BaseActivity implements  DialogUtilities.OnCom
     private TextView tvQuestionText;
     private TextView tvQuestionTitle;
     private ImageView imgFirstLife, imgSecondLife, imgThirdLife, imgFourthLife, imgFifthLife;
+    public static final String EXTRA_MESSAGE = "com.example.quizapdd.MESSAGE";
 
     private QuizAdapter mAdapter = null;
     private List<QuizModel> mItemList;
@@ -234,6 +235,12 @@ public class QuizActivity extends BaseActivity implements  DialogUtilities.OnCom
 
     }
 
+    public void startScoreCardActivity(ArrayList dataToSend) {
+        Intent intent = new Intent(QuizActivity.this, ScoreCardActivity.class);
+        intent.putExtra("data", dataToSend);
+        QuizActivity.this.startActivity(intent);
+    }
+
     public void updateResultSet(int data, int checker) {
         if (checker == 1)
             mResultList.add("Score");
@@ -302,8 +309,6 @@ public class QuizActivity extends BaseActivity implements  DialogUtilities.OnCom
         }
     }
 
-
-
     public void setNextQuestion() {
         if (isSoundOn) {
             mBeatBox.play(mSounds.get(AppConstants.BUNDLE_KEY_FIRST_INDEX));
@@ -317,6 +322,7 @@ public class QuizActivity extends BaseActivity implements  DialogUtilities.OnCom
             DialogUtilities dialog = DialogUtilities.newInstance(getString(R.string.reward_dialog_title), getString(R.string.reward_dialog_message), getString(R.string.yes), getString(R.string.no), AppConstants.BUNDLE_KEY_REWARD_OPTION);
             dialog.show(manager, AppConstants.BUNDLE_KEY_DIALOG_FRAGMENT);
         } else {
+            startScoreCardActivity(mResultList);
             //TODO: invoke ScoreCardActivity
         }
     }
@@ -435,6 +441,7 @@ public class QuizActivity extends BaseActivity implements  DialogUtilities.OnCom
                 //TODO:  mRewardedVideoAd.show();
             }
         } else if (!isOkPressed && viewIdText.equals(AppConstants.BUNDLE_KEY_REWARD_OPTION)) {
+            startScoreCardActivity(mResultList);
             //TODO: invoke ScoreCardActivity
             AppPreference.getInstance(mContext).setQuizResult(mCategoryId, mScore);
             AppPreference.getInstance(mContext).setQuizQuestionsCount(mCategoryId, mQuestionsCount);
