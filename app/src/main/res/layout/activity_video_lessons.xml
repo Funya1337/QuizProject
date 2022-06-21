@@ -18,10 +18,58 @@
         android:text="@string/videoLessons" />
 
     <TextView
+        android:layout_below="@+id/dialog_title"
+        android:id="@+id/video_title1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="VIDEO ACTIVITY"
-        android:textSize="30sp"
-        android:gravity="center"/>
+        android:layout_height="wrap_content"
+        android:text="Первый урок"/>
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/youtube_player_view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/video_title1"
+        android:padding="10dp"
+
+        android:soundEffectsEnabled="false"
+        app:autoPlay="true"
+        app:videoId="Oc5bIgsg1Iw" />
+
+    <TextView
+        android:layout_below="@+id/youtube_player_view1"
+        android:id="@+id/video_title2"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="Второй урок "/>
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:padding="10dp"
+        android:id="@+id/youtube_player_view2"
+        android:layout_below="@id/video_title2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:videoId="qRU2aoiSLlg"
+        app:autoPlay="true"
+        android:soundEffectsEnabled="false"/>
+
+    <Button
+        android:layout_below="@id/youtube_player_view2"
+        android:id="@+id/btnMain"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/main_menu_return" />
 
 </RelativeLayout>

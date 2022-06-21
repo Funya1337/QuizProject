@@ -77,12 +77,10 @@ public class QuizActivity extends BaseActivity implements  DialogUtilities.OnCom
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
         initVar();
         initView();
         loadData();
         initListener();
-
 
     }
 

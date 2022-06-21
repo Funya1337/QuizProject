@@ -38,6 +38,8 @@
         android:layout_below="@id/textViewResult"
         android:id="@+id/btnMain"
         android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/main_menu_return" />
