@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/AZA/AndroidStudioProjects/QuizAPDD/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2075" />
+        <entry key="..\:/Users/AZA/AndroidStudioProjects/QuizAPDD/app/src/main/res/drawable-v24/rectangle_any_pressed.xml" value="0.1" />
+        <entry key="..\:/Users/AZA/AndroidStudioProjects/QuizAPDD/app/src/main/res/drawable-v24/rectangle_blue.xml" value="0.1" />
+        <entry key="..\:/Users/AZA/AndroidStudioProjects/QuizAPDD/app/src/main/res/drawable-v24/rectangle_blue_normal.xml" value="0.1" />
+        <entry key="..\:/Users/AZA/AndroidStudioProjects/QuizAPDD/app/src/main/res/drawable-v24/rectangle_deep_blue.xml" value="0.1" />
+        <entry key="..\:/Users/AZA/AndroidStudioProjects/QuizAPDD/app/src/main/res/drawable-v24/rectangle_deep_blue_normal.xml" value="0.1" />
+        <entry key="..\:/Users/AZA/AndroidStudioProjects/QuizAPDD/app/src/main/res/drawable-v24/rectangle_gray_normal.xml" value="0.1" />
+        <entry key="..\:/Users/AZA/AndroidStudioProjects/QuizAPDD/app/src/main/res/drawable-v24/rectangle_green_normal.xml" value="0.1" />
+        <entry key="..\:/Users/AZA/AndroidStudioProjects/QuizAPDD/app/src/main/res/drawable-v24/rectangle_orange_normal.xml" value="0.1" />
+        <entry key="..\:/Users/AZA/AndroidStudioProjects/QuizAPDD/app/src/main/res/drawable-v24/rectangle_purple_normal.xml" value="0.1" />
+        <entry key="..\:/Users/AZA/AndroidStudioProjects/QuizAPDD/app/src/main/res/drawable-v24/rectangle_quiz_green_normal.xml" value="0.1" />
+        <entry key="..\:/Users/AZA/AndroidStudioProjects/QuizAPDD/app/src/main/res/drawable-v24/rectangle_quiz_red_normal.xml" value="0.1" />
+        <entry key="..\:/Users/AZA/AndroidStudioProjects/QuizAPDD/app/src/main/res/drawable-v24/rectangle_red.xml" value="0.1" />
+        <entry key="..\:/Users/AZA/AndroidStudioProjects/QuizAPDD/app/src/main/res/drawable-v24/rectangle_red_normal.xml" value="0.1" />
+        <entry key="..\:/Users/AZA/AndroidStudioProjects/QuizAPDD/app/src/main/res/drawable-v24/rectangle_white.xml" value="0.1" />
+        <entry key="..\:/Users/AZA/AndroidStudioProjects/QuizAPDD/app/src/main/res/drawable-v24/rectangle_white_normal.xml" value="0.1" />
+        <entry key="..\:/Users/AZA/AndroidStudioProjects/QuizAPDD/app/src/main/res/drawable-v24/rectangle_yellow.xml" value="0.1925" />
+        <entry key="..\:/Users/AZA/AndroidStudioProjects/QuizAPDD/app/src/main/res/drawable-v24/rectangle_yellow_normal.xml" value="0.1925" />
+        <entry key="..\:/Users/AZA/AndroidStudioProjects/QuizAPDD/app/src/main/res/drawable/badge_circle.xml" value="0.165" />
+        <entry key="..\:/Users/AZA/AndroidStudioProjects/QuizAPDD/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2065" />
+        <entry key="..\:/Users/AZA/AndroidStudioProjects/QuizAPDD/app/src/main/res/layout-land/activity_quiz_prompt.xml" value="0.1693121693121693" />
+        <entry key="..\:/Users/AZA/AndroidStudioProjects/QuizAPDD/app/src/main/res/layout/activity_about_dev.xml" value="0.2" />
+        <entry key="..\:/Users/AZA/AndroidStudioProjects/QuizAPDD/app/src/main/res/layout/activity_custom_url.xml" value="0.12552083333333333" />
+        <entry key="..\:/Users/AZA/AndroidStudioProjects/QuizAPDD/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/AZA/AndroidStudioProjects/QuizAPDD/app/src/main/res/layout/activity_quiz.xml" value="0.17889492753623187" />
+        <entry key="..\:/Users/AZA/AndroidStudioProjects/QuizAPDD/app/src/main/res/layout/activity_quiz_prompt.xml" value="0.33" />
+        <entry key="..\:/Users/AZA/AndroidStudioProjects/QuizAPDD/app/src/main/res/layout/activity_splashactivity.xml" value="0.25" />
+        <entry key="..\:/Users/AZA/AndroidStudioProjects/QuizAPDD/app/src/main/res/layout/content_main.xml" value="0.33" />
+        <entry key="..\:/Users/AZA/AndroidStudioProjects/QuizAPDD/app/src/main/res/layout/fragment_custom_dialog.xml" value="0.17889492753623187" />
+        <entry key="..\:/Users/AZA/AndroidStudioProjects/QuizAPDD/app/src/main/res/layout/item_category_recycler.xml" value="0.25" />
+        <entry key="..\:/Users/AZA/AndroidStudioProjects/QuizAPDD/app/src/main/res/layout/item_quiz.xml" value="0.17889492753623187" />
+        <entry key="..\:/Users/AZA/AndroidStudioProjects/QuizAPDD/app/src/main/res/layout/toolbar.xml" value="0.22" />
+        <entry key="..\:/Users/AZA/AndroidStudioProjects/QuizAPDD/app/src/main/res/layout/toolbar_main.xml" value="0.22" />
+        <entry key="..\:/Users/AZA/AndroidStudioProjects/QuizAPDD/app/src/main/res/layout/view_loader.xml" value="0.154296875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
