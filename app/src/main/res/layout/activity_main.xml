@@ -20,7 +20,18 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/toolbarTop"/>
 
-    <include
-        layout="@layout/view_loader"/>
+
+    <Button
+        android:id="@+id/imgTestBtn"
+        android:layout_width="176dp"
+        android:layout_height="200dp"
+        android:backgroundTint="@color/primary"
+        android:textColor="@color/white"
+        android:text="Image test"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="12dp"
+        android:layout_below="@+id/include"/>
+
+    <include layout="@layout/view_loader" />
 
 </RelativeLayout>

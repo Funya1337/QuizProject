@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -51,6 +52,8 @@ public class MainActivity extends BaseActivity {
     private CategoryAdapter adapter = null;
     private RecyclerView recyclerView;
 
+    private Button imgTestBtn;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,7 +65,15 @@ public class MainActivity extends BaseActivity {
         activity = MainActivity.this;
         context = getApplicationContext();
 
+        imgTestBtn = findViewById(R.id.imgTestBtn);
 
+        imgTestBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ImageTestActivity.class);
+                MainActivity.this.startActivity(intent);
+            }
+        });
 
         recyclerView = (RecyclerView) findViewById(R.id.rvContent);
         recyclerView.setLayoutManager(new GridLayoutManager(activity, 2, GridLayoutManager.VERTICAL, false));
