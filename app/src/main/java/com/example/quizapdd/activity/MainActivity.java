@@ -106,7 +106,8 @@ public class MainActivity extends BaseActivity {
                         new PrimaryDrawerItem().withName("Об аккаунте").withIcon(R.drawable.ic_dev).withIdentifier(10).withSelectable(false),
 
                         new DividerDrawerItem(),
-                        new SecondaryDrawerItem().withName("Видеоуроки").withIcon(R.drawable.ic_baseline_slow_motion_video_24).withIdentifier(11).withSelectable(false),
+                        new SecondaryDrawerItem().withName("Админпанель").withIcon(R.drawable.ic_baseline_admin_panel_settings_24).withIdentifier(11).withSelectable(false),
+                        new SecondaryDrawerItem().withName("Видеоуроки").withIcon(R.drawable.ic_baseline_slow_motion_video_24).withIdentifier(12).withSelectable(false),
                         new DividerDrawerItem(),
 
                         new SecondaryDrawerItem().withName("YouTube").withIcon(R.drawable.ic_youtube).withIdentifier(20).withSelectable(false),
@@ -134,7 +135,9 @@ public class MainActivity extends BaseActivity {
                             if (drawerItem.getIdentifier() == 10) {
                                 ActivityUtilities.getInstance().invokeNewActivity(activity, AboutDevActivity.class, false);
                             } else if (drawerItem.getIdentifier() == 11) {
-                                ActivityUtilities.getInstance().invokeCustomUrlActivity(activity, VideoLessonsActivity.class, "", "" ,false);
+                                ActivityUtilities.getInstance().invokeNewActivity(activity, AuthorizeActivity.class, false);
+                            } else if (drawerItem.getIdentifier() == 12) {
+                                ActivityUtilities.getInstance().invokeNewActivity(activity, VideoLessonsActivity.class, false);
                             } else if (drawerItem.getIdentifier() == 20) {
                                 AppUtilities.youtubeLink(activity);
                             } else if (drawerItem.getIdentifier() == 21) {

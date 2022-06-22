@@ -6,19 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".activity.ScoreCardActivity">
 
-    <TextView
-        android:id="@+id/dialog_title"
+<!--    <TextView-->
+<!--        android:id="@+id/dialog_title"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/colorPrimary"-->
+<!--        android:padding="10dp"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textSize="20sp"-->
+<!--        android:text="@string/results" />-->
+
+    <include
+        android:id="@+id/toolbarTop"
+        layout="@layout/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
-        android:padding="10dp"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:textSize="20sp"
-        android:text="@string/results" />
+        android:layout_height="wrap_content" />
 
     <ListView
-        android:layout_below="@+id/dialog_title"
+        android:layout_below="@+id/toolbarTop"
         android:id="@+id/simpleListView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

@@ -350,6 +350,7 @@ public class QuizActivity extends BaseActivity implements  DialogUtilities.OnCom
         StringBuffer sb = new StringBuffer();
         BufferedReader br = null;
         try {
+//            FileInputStream fileInputStream = new FileInputStream(getApplicationContext().getFilesDir().getPath() + "/question_set.json");
             br = new BufferedReader(new InputStreamReader(getAssets().open(AppConstants.QUESTION_FILE)));
             String temp;
             while ((temp = br.readLine()) != null)

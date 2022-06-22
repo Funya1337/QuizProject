@@ -2,19 +2,18 @@ package com.example.quizapdd.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.quizapdd.R;
 
 import java.util.ArrayList;
 
-public class ScoreCardActivity extends AppCompatActivity {
+public class ScoreCardActivity extends BaseActivity {
 
     ListView simpleListView;
     TextView resultTextView;
@@ -46,11 +45,20 @@ public class ScoreCardActivity extends AppCompatActivity {
             }
         });
 
+        initToolbar(true);
+        setToolbarTitle("Результаты");
+        enableUpButton();
+        initLoader();
+
         // Capture the layout's TextView and set the string as its text
 //        TextView textView = findViewById(R.id.textView);
 //        textView.setText(value);
 
+    }
 
+    @Override
+    public void onBackPressed() {
+        Log.d("warn", "YOU PRESSED THE BTN");
     }
 
     public int getPlayerScore(ArrayList data) {
